@@ -1,0 +1,53 @@
+# Framework
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+
+# RAG
+llama-index-core
+llama-index-llms-openai
+llama-index-embeddings-openai
+llama-index-vector-stores-chroma
+llama-index-retrievers-bm25
+
+# Vector DB
+chromadb
+
+# LLM clients
+openai
+
+# PDF parsing
+pymupdf
+pdfplumber
+pytesseract
+
+# Crawling + HTML cleaning
+crawl4ai
+trafilatura
+requests
+beautifulsoup4
+lxml
+
+# Reranker
+sentence-transformers
+
+# Rate limiting + retry
+slowapi
+limits
+tenacity
+
+# Database
+sqlalchemy
+aiosqlite
+
+# Observability
+langfuse
+
+# Frontend (MVP)
+streamlit
+
+# Utilities
+httpx
+tqdm
+rich

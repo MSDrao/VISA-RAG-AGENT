@@ -1,0 +1,152 @@
+[
+  {
+    "id": "f1_grace_period",
+    "question": "What is the 60-day grace period for F-1 students?",
+    "expected_url_keywords": ["studyinthestates", "f-1-students", "students-and-employment"],
+    "official_sources_only": true
+  },
+  {
+    "id": "stem_opt_apply",
+    "question": "How do I apply for a STEM OPT extension?",
+    "expected_url_keywords": ["stem-opt", "i-983", "optional-practical-training", "studyinthestates"],
+    "official_sources_only": true
+  },
+  {
+    "id": "h1b_layoff",
+    "question": "What happens if I lose my H-1B job?",
+    "expected_url_keywords": ["h-1b-specialty-occupations", "volume-2-part-h", "temporary-workers"],
+    "official_sources_only": true
+  },
+  {
+    "id": "i140_processing",
+    "question": "If my h1 is approved, how many days does i 140 usually take to approve, and what factors are involved?",
+    "expected_url_keywords": ["i-140", "processing-times", "permanent-workers"],
+    "official_sources_only": true
+  },
+  {
+    "id": "ead_pending_travel",
+    "question": "Can I travel outside the US while my EAD is pending?",
+    "expected_url_keywords": ["advance-parole", "travel", "i-94", "i-131"],
+    "official_sources_only": true
+  },
+  {
+    "id": "visitor_work",
+    "question": "Can I work on a B-2 visa?",
+    "expected_url_keywords": ["tourism-visit", "visitor", "travel.state.gov"],
+    "official_sources_only": true
+  },
+  {
+    "id": "typo_i140",
+    "question": "if my h1 aproved how long for i 140 aproval",
+    "expected_url_keywords": ["i-140", "processing-times", "permanent-workers"],
+    "official_sources_only": true
+  },
+  {
+    "id": "tier2_opt",
+    "question": "How many unemployment days can I have on OPT?",
+    "expected_url_keywords": ["studyinthestates", "internationaloffice.berkeley.edu", "bechtel.stanford.edu"],
+    "official_sources_only": false
+  },
+  {
+    "id": "h1b_grace_period",
+    "question": "How long is the grace period after H-1B job termination?",
+    "expected_url_keywords": ["options-for-nonimmigrant-workers-following-termination-of-employment", "faqs-for-individuals-in-h-1b-nonimmigrant-status"],
+    "official_sources_only": true
+  },
+  {
+    "id": "b2_work_restriction",
+    "question": "Is employment allowed on a B-2 visitor visa?",
+    "expected_url_keywords": ["tourism-visit/visitor", "tourism-visit.html"],
+    "official_sources_only": true
+  },
+  {
+    "id": "ead_travel_advance_parole",
+    "question": "If my adjustment-based EAD is pending, do I need advance parole to travel?",
+    "expected_url_keywords": ["i-131", "advance-parole", "travel-documents"],
+    "official_sources_only": true
+  },
+  {
+    "id": "f1_cap_gap_grace",
+    "question": "If my H-1B is denied during cap-gap, do I get a 60-day grace period?",
+    "expected_url_keywords": ["extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students", "volume-2-part-f-chapter-5"],
+    "official_sources_only": true
+  },
+  {
+    "id": "opt_unemployment_days",
+    "question": "How many unemployment days are allowed during post-completion OPT?",
+    "expected_url_keywords": ["optional-practical-training-opt-for-f-1-students", "studyinthestates", "students/opt"],
+    "official_sources_only": true
+  },
+  {
+    "id": "stem_opt_unemployment_days",
+    "question": "How many unemployment days can I have on STEM OPT?",
+    "expected_url_keywords": ["stem-opt", "studyinthestates", "stem-opt-hub"],
+    "official_sources_only": true
+  },
+  {
+    "id": "cpt_requires_i20",
+    "question": "Do I need a new I-20 for CPT authorization?",
+    "expected_url_keywords": ["curricular-practical-training-cpt-for-f-1-students", "students/cpt"],
+    "official_sources_only": true
+  },
+  {
+    "id": "f1_travel_requirements",
+    "question": "What documents do I need to travel and re-enter in F-1 status?",
+    "expected_url_keywords": ["traveling-outside-the-united-states", "kbyg-students", "travel"],
+    "official_sources_only": true
+  },
+  {
+    "id": "i94_record",
+    "question": "Where can I get my I-94 record?",
+    "expected_url_keywords": ["i-94", "cbp"],
+    "official_sources_only": true
+  },
+  {
+    "id": "h4_ead",
+    "question": "Can an H-4 spouse work in the United States?",
+    "expected_url_keywords": ["employment-authorization-for-certain-h-4-dependent-spouses", "i-765"],
+    "official_sources_only": true
+  },
+  {
+    "id": "perm_overview",
+    "question": "What is PERM labor certification?",
+    "expected_url_keywords": ["how-apply-perm", "flag.dol.gov"],
+    "official_sources_only": true
+  },
+  {
+    "id": "h1b_lca_overview",
+    "question": "What is an LCA in the H-1B process?",
+    "expected_url_keywords": ["how-apply-h-1b", "flag.dol.gov"],
+    "official_sources_only": true
+  },
+  {
+    "id": "i131_purpose",
+    "question": "What is Form I-131 used for?",
+    "expected_url_keywords": ["i-131", "advance-parole", "travel-documents"],
+    "official_sources_only": true
+  },
+  {
+    "id": "green_card_overview",
+    "question": "What are the main employment-based green card steps?",
+    "expected_url_keywords": ["green-card", "permanent-workers", "i-140"],
+    "official_sources_only": true
+  },
+  {
+    "id": "visa_bulletin",
+    "question": "What is the Visa Bulletin used for?",
+    "expected_url_keywords": ["visa-bulletin", "immigrate"],
+    "official_sources_only": true
+  },
+  {
+    "id": "sevis_transfer",
+    "question": "How does a SEVIS transfer work for F-1 students?",
+    "expected_url_keywords": ["sevis-help-hub", "studyinthestates", "maintaining-your-status"],
+    "official_sources_only": true
+  },
+  {
+    "id": "tier2_travel",
+    "question": "Can I travel during OPT and what should I carry?",
+    "expected_url_keywords": ["students/travel", "travel-and-visas", "studyinthestates"],
+    "official_sources_only": false
+  }
+]

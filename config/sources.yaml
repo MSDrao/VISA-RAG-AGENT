@@ -1,0 +1,286 @@
+sources:
+- base_url: https://www.uscis.gov/policy-manual
+  change_detection: content_hash
+  crawl_strategy: sitemap
+  enabled: true
+  id: uscis_policy_manual
+  name: USCIS Policy Manual
+  priority: 10
+  refresh_interval_days: 14
+  refresh_group: weekly
+  sitemap_url: https://www.uscis.gov/sitemap.xml
+  tier: 1
+  tier_label: Official U.S. Government
+  type: html
+  url_filter_pattern: /policy-manual/
+  visa_tags:
+  - F-1
+  - H-1B
+  - H-4
+  - O-1
+  - EAD
+  - B-1
+  - B-2
+  - COS
+  - green_card
+  - CPT
+  - OPT
+  - STEM_OPT
+- base_url: https://www.uscis.gov
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: uscis_main
+  name: USCIS Main Website
+  priority: 9
+  refresh_interval_days: 1
+  refresh_group: daily
+  time_sensitive: true
+  target_paths:
+  - /working-in-the-united-states/temporary-workers/h-1b-specialty-occupations
+  - /working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/faqs-for-individuals-in-h-1b-nonimmigrant-status
+  - /working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students
+  - /working-in-the-united-states/students-and-exchange-visitors/students-and-employment
+  - /working-in-the-united-states/students-and-exchange-visitors
+  - /working-united-states/permanent-workers
+  - /working-in-the-united-states/information-for-employers-and-employees/options-for-nonimmigrant-workers-following-termination-of-employment
+  - /i-140
+  - /i-131
+  - /forms/petition-filing-and-processing-procedures-form-i-140-immigrant-petition-alien-worker
+  - /forms/all-forms/direct-filing-addresses-for-form-i-140-immigrant-petition-for-alien-workers
+  - /green-card
+  - /forms/all-forms
+  - /tools/processing-times
+  - /working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students
+  - /working-in-the-united-states/students-and-exchange-visitors/stem-opt-hub
+  - /working-in-the-united-states/students-and-exchange-visitors/f-1-students
+  - /policy-manual/volume-2-part-f-chapter-5
+  - /policy-manual/volume-2-part-f-chapter-6
+  - /policy-manual/volume-2-part-f-chapter-7
+  - /policy-manual/volume-2-part-f-chapter-4
+  - /working-in-the-united-states/students-and-exchange-visitors/curricular-practical-training-cpt-for-f-1-students
+  - /working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/employment-authorization-for-certain-h-4-dependent-spouses
+  - /policy-manual/volume-2-part-k-chapter-3
+  - /travel/travel-documents/advance-parole
+  - /travel/travel-documents/advance-parole/about-advance-parole
+  - /policy-manual/volume-4-part-b
+  tier: 1
+  tier_label: Official U.S. Government
+  type: html
+  visa_tags:
+  - F-1
+  - H-1B
+  - H-4
+  - OPT
+  - STEM_OPT
+  - CPT
+  - EAD
+  - B-1
+  - B-2
+  - green_card
+  - SEVIS
+- base_url: https://travel.state.gov
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: travel_state_gov
+  name: U.S. Department of State — Bureau of Consular Affairs
+  priority: 9
+  refresh_interval_days: 1
+  refresh_group: daily
+  time_sensitive: true
+  special_handling: visa_bulletin
+  target_paths:
+  - /content/travel/en/legal/visa-law0/visa-bulletin.html
+  - /content/travel/en/us-visas/study.html
+  - /content/travel/en/us-visas/work.html
+  - /content/travel/en/us-visas/tourism-visit.html
+  - /content/travel/en/us-visas/tourism-visit/visitor.html
+  - /content/travel/en/us-visas/immigrate.html
+  tier: 1
+  tier_label: Official U.S. Government
+  type: html
+  visa_bulletin_expiry_days: 45
+  visa_tags:
+  - F-1
+  - H-1B
+  - B-1
+  - B-2
+  - travel
+  - visa_stamp
+  - green_card
+  - Visa Bulletin
+- base_url: https://studyinthestates.dhs.gov
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: study_in_the_states
+  name: Study in the States — DHS / ICE / SEVP
+  priority: 9
+  refresh_interval_days: 7
+  refresh_group: weekly
+  target_paths:
+  - /students
+  - /students/opt
+  - /students/stem-opt-hub
+  - /students/working-off-campus
+  - /students/maintaining-your-status
+  - /students/preparing-to-leave
+  - /students/traveling-outside-the-united-states
+  - /school-officials
+  - /sevis-help-hub
+  - /students/cpt
+  - /students/stem-opt-hub/before-you-apply
+  - /students/stem-opt-hub/reporting-requirements
+  tier: 1
+  tier_label: Official U.S. Government
+  type: html
+  visa_tags:
+  - F-1
+  - OPT
+  - STEM_OPT
+  - CPT
+  - SEVIS
+  - M-1
+  - H-4
+- base_url: https://www.cbp.gov
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: cbp_travel
+  name: U.S. Customs and Border Protection — Travel and I-94
+  priority: 8
+  refresh_interval_days: 7
+  refresh_group: weekly
+  target_paths:
+  - /travel/international-visitors/i-94
+  - /travel/international-visitors/visa-waiver-program
+  - /travel/us-citizens/travel-documents
+  - /travel/international-visitors/kbyg/kbyg-students
+  - /travel/us-citizens/western-hemisphere-travel-initiative
+  tier: 1
+  tier_label: Official U.S. Government
+  type: html
+  visa_tags:
+  - F-1
+  - H-1B
+  - B-1
+  - B-2
+  - travel
+  - CBP
+  - I-94
+- base_url: https://flag.dol.gov
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: dol_flag
+  name: DOL Foreign Labor Certification — OFLC
+  priority: 8
+  refresh_interval_days: 7
+  refresh_group: weekly
+  target_paths:
+  - /content/flag/how-apply-h-1b
+  - /index.php/programs/perm
+  - /programs/prevailingwages
+  - /content/flag/faqs
+  tier: 1
+  tier_label: Official U.S. Government
+  type: html
+  visa_tags:
+  - H-1B
+  - LCA
+  - prevailing_wage
+  - EAD
+  - green_card
+  - PERM
+- base_url: https://www.nafsa.org
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: nafsa
+  name: 'NAFSA: Association of International Educators'
+  priority: 6
+  refresh_interval_days: 30
+  refresh_group: monthly
+  target_paths:
+  - /resource-library/immigration-and-international-student-services
+  tier: 2
+  tier_label: Accredited Professional Organization
+  type: html
+  visa_tags:
+  - F-1
+  - J-1
+  - OPT
+  - STEM_OPT
+  - CPT
+  - SEVIS
+- base_url: https://iso.mit.edu
+  change_detection: content_hash
+  crawl_strategy: sitemap
+  enabled: true
+  id: mit_iso
+  name: MIT International Students Office
+  priority: 5
+  refresh_interval_days: 45
+  refresh_group: monthly
+  tier: 2
+  tier_label: University International Office
+  type: html
+  sitemap_url: https://iso.mit.edu/sitemap.xml
+  url_filter_pattern: /students/
+  verify_ssl: false
+  visa_tags:
+  - F-1
+  - OPT
+  - STEM_OPT
+  - CPT
+  - SEVIS
+  - J-1
+- base_url: https://internationaloffice.berkeley.edu
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: berkeley_international_office
+  name: UC Berkeley International Office
+  priority: 5
+  refresh_interval_days: 45
+  refresh_group: monthly
+  target_paths:
+  - /students/current/f-1
+  - /students/employment/opt
+  - /students/employment/stem-opt
+  - /students/employment/cpt
+  - /students/travel
+  tier: 2
+  tier_label: University International Office
+  type: html
+  visa_tags:
+  - F-1
+  - OPT
+  - STEM_OPT
+  - CPT
+  - SEVIS
+- base_url: https://bechtel.stanford.edu
+  change_detection: content_hash
+  crawl_strategy: targeted_urls
+  enabled: true
+  id: stanford_bechtel
+  name: Stanford Bechtel International Center
+  priority: 5
+  refresh_interval_days: 45
+  refresh_group: monthly
+  target_paths:
+  - /immigration/f-1/employment/f-1-opt
+  - /immigration/f-1/employment/f-1-stem-opt-extension
+  - /immigration/f-1/employment/f-1-cpt
+  - /immigration/f-1/maintaining-status
+  - /immigration/f-1/travel-and-visas
+  tier: 2
+  tier_label: University International Office
+  type: html
+  visa_tags:
+  - F-1
+  - OPT
+  - STEM_OPT
+  - CPT
+  - SEVIS
