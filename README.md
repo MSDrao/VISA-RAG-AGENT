@@ -82,6 +82,34 @@ You should prepare a deployment-safe Chroma snapshot and make it available to th
 
 Without that, questions that depend on the main RAG index will have little or no useful context.
 
+### Recommended snapshot approach
+
+The deployment startup script now supports optional Chroma snapshot restore through:
+
+```text
+CHROMA_SNAPSHOT_URL
+```
+
+How it works:
+
+1. build your Chroma index locally
+2. create a tarball of `data/chroma`
+3. upload that tarball somewhere reachable by the deployment
+4. set `CHROMA_SNAPSHOT_URL` in the Hugging Face Space secrets or variables
+5. on container startup, the app downloads and extracts the snapshot before starting the API
+
+Example local archive command:
+
+```bash
+cd /Users/sandeshrao/visa-rag-agent
+tar -czf chroma_snapshot.tar.gz data/chroma
+```
+
+Important:
+- the archive should extract to `data/chroma/...`
+- do not include `.env` or any user data in the archive
+- this is still a deployment convenience path, not a full production storage design
+
 ## Main components
 
 - API: `api/`
