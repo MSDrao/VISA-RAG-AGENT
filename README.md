@@ -1,10 +1,9 @@
 ---
-title: VISA RAG AGENT
-emoji: "🛂"
+title: visa-rag-agent
+emoji: 🛂
 colorFrom: blue
 colorTo: indigo
 sdk: docker
-pinned: false
 app_port: 7860
 ---
 
