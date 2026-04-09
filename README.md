@@ -1,3 +1,13 @@
+---
+title: VISA RAG AGENT
+emoji: "🛂"
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+app_port: 7860
+---
+
 # U.S. Immigration Assistant
 
 A retrieval-augmented application for U.S. immigration and visa questions, grounded in official government sources and selected institutional guidance.
